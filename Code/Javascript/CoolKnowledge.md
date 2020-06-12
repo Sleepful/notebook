@@ -50,6 +50,18 @@ console.log(val)
 val = obj?.zero?.one?.two // avoids error, evaluates to undefined instead of '0', easy to read
 console.log(val)
 
+// chaining can also be used for functions which might be undefined:
+val = obj.foo() // throws error
+val = obj.foo?.() // returns undefined
+val = obj.foo && obj.foo() // with &&, returns undefined
+obj.foo = () => 'result'
+val = obj.foo?.() // returns 'result'
+
+// chaining also works with array accesors []
+val = obj.someArray?.[0] // undefined
+obj.someArray = [25,55]
+val = obj.someArray?.[0] // returns 25
+
 ```
 
 [javascrip.info link](https://javascript.info/optional-chaining)
