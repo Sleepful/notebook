@@ -23,7 +23,8 @@ val = obj.zero.one // evaluates to undefined
 console.log(val)
 
 // The issue:
-// Sometimes 'obj.zero.one.two' exists, sometimes it does not, you need to get its value when it exists, or get undefined if it does not exist, but the following throws an error:
+// Sometimes 'obj.zero.one.two' exists, sometimes it does not, you need to get its value when it
+//  exists, or get undefined if it does not exist, but the following throws an error:
 
 val = obj.zero.one.two // throws undefined TypeError
 
@@ -37,7 +38,8 @@ val = obj.zero.one && obj.zero.one.two // evaluates to undefined, avoids error
 console.log(val)
 
 // The problem with shortcircuiting:
-// It is not guaranteed to return 'undefined' when the property does not exist, it will evaluate to falsy values such as '0', 'false', null... Shortcircuiting is also a little hard to read
+// It is not guaranteed to return 'undefined' when the property does not exist, it will evaluate to
+//  falsy values such as '0', 'false', null... Shortcircuiting is also a little hard to read
 
 // shortCircuiting works fine if it doesn't find a falsy value:
 val = obj.notFalsy && obj.notFalsy.one && obj.notFalsy.one.two // evaluates to undefined, avoids error
