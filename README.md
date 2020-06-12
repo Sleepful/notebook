@@ -1,3 +1,3 @@
-# notebook
+# Notebook
 
-And thus were my notes
+Personal notes and saved resources.
