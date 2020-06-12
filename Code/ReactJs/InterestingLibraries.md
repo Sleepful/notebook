@@ -11,6 +11,9 @@ https://github.com/tannerlinsley/react-query#queries
 
 **RxJS**: Not a React library, but worth looking into its use with React
 
+**Why did you render**: React library to help with development
+https://github.com/welldone-software/why-did-you-render
+
 
 # Others
 **Formik**: For Forms, have not looked into deeply

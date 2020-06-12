@@ -51,6 +51,7 @@ val = obj?.zero?.one?.two // avoids error, evaluates to undefined instead of '0'
 console.log(val)
 
 // chaining can also be used for functions which might be undefined:
+val = obj.foo // returns undefined
 val = obj.foo() // throws error
 val = obj.foo?.() // returns undefined
 val = obj.foo && obj.foo() // with &&, returns undefined
