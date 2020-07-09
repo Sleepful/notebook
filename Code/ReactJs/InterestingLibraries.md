@@ -15,5 +15,17 @@ https://github.com/tannerlinsley/react-query#queries
 https://github.com/welldone-software/why-did-you-render
 
 
-# Others
-**Formik**: For Forms, have not looked into deeply
+# Do not want to use
+
+**Formik**: Component for forms, limiting, offers little to no value, increases complexity of the project,
+seems useful only for native uncontrolled html components. Issues with controlled components:
+https://github.com/jaredpalmer/formik/issues/184
+https://github.com/jaredpalmer/formik/issues/812
+https://github.com/jaredpalmer/formik/issues/485
+https://github.com/jaredpalmer/formik/issues/401
+https://github.com/jaredpalmer/formik/issues/271
+[Even their codesandbox example seems more of a hassle than it is worth]
+(https://github.com/jaredpalmer/formik/issues/465)
+There are ways around these issues in order to use Formik as a controlled component, such as using [useFormikContext()](https://jaredpalmer.com/formik/docs/api/useFormikContext#example), using Formik is left as an exercise to the reader.
+**React Hook Form**: Hooks and components for forms, adds much complexity, poor documentation, focus on uncontrolled components. I tried using their `<Control>` component for controlled inputs but it's confusing and boilerplate-y.
+https://github.com/react-hook-form/react-hook-form/discussions/1782

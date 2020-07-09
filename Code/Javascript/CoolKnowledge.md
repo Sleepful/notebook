@@ -64,7 +64,7 @@ obj.someArray = [25,55]
 val = obj.someArray?.[0] // returns 25
 
 ```
-
+[github link, proposal information](https://github.com/tc39/proposal-optional-chaining)
 [javascrip.info link](https://javascript.info/optional-chaining)
 
 
@@ -103,5 +103,5 @@ console.log(someVar || 5) // outputs 5
 console.log(someVar ?? 5) // outputs 5
 
 ```
-
+[github link, proposal information](https://github.com/tc39/proposal-nullish-coalescing)
 [javascrip.info link](https://javascript.info/nullish-coalescing-operator)
